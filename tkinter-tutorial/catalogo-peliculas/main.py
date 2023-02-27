@@ -6,6 +6,7 @@ def main():
     # Create the main window 
     root = tk.Tk()
     root.title('Catálogo de películas')
+    # root.geometry('800x400')
     root.resizable(0, 0)
     
     barra_menu(root)   
