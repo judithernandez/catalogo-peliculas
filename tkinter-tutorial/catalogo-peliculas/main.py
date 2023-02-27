@@ -1,20 +1,19 @@
 import tkinter as tk
+from client.gui import Frame, barra_menu
 
 def main():
 
     # Create the main window 
     root = tk.Tk()
     root.title('Catálogo de películas')
-    root.geometry('800x400')
     root.resizable(0, 0)
     
+    barra_menu(root)   
 
     # Create a Frame
-    frame = tk.Frame(root)
-    frame.pack(fill='both', expand=1)
-    frame.config(bg='lightblue')
+    app = Frame(root=root)
 
-    root.mainloop()
+    app.mainloop()
         
 if __name__ == '__main__':
     main()
